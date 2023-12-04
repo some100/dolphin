@@ -483,7 +483,7 @@ void SConfig::LoadCoreSettings(IniFile& ini)
   core->Get("DSPHLE", &bDSPHLE, true);
   core->Get("TimingVariance", &iTimingVariance, 40);
   core->Get("CPUThread", &bCPUThread, true);
-  core->Get("SyncOnSkipIdle", &bSyncGPUOnSkipIdleHack, true);
+  core->Get("SyncOnSkipIdle", &bSyncGPUOnSkipIdleHack, false);
   core->Get("EnableCheats", &bEnableCheats, false);
   core->Get("SelectedLanguage", &SelectedLanguage, 0);
   core->Get("OverrideRegionSettings", &bOverrideRegionSettings, false);
